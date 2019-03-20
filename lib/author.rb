@@ -5,4 +5,9 @@ class Author
     @name = name 
   end
   
+  def add_post(post)
+    post = Post.new(post)
+    @posts << post 
+  end
+  
 end
