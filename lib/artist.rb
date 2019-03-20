@@ -1,6 +1,7 @@
 class Artist 
   attr_accessor :name, :songs
   
+  # new instance of artist with empty songs array 
   def initialize(name)
     @name = name
     @songs = []
