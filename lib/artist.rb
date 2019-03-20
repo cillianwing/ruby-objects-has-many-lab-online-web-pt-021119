@@ -7,11 +7,13 @@ class Artist
     @songs = []
   end 
   
+  #add new song to artist instance, artist name not included
   def add_song(song)
     @songs << song 
     song.artist = self
   end
   
+  #add new song to artist instance, arist name included 
   def add_song_by_name(name)
     song = Song.new(name)
     @songs << song 
